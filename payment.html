@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Page</h1>
+        <p>Please make payments promptly to keep the fun going! Your contributions help keep this tracker up and running!</p>
+    </header>
+
+    <!-- Payment Page Content -->
+    <div class="content-wrapper">
+        <!-- Payment Info Sidebar -->
+        <aside id="payment-sidebar">
+            <h2>Payment Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Points (RM)</th>
+                    </tr>
+                </thead>
+                <tbody id="paymentSummaryBody">
+                    <!-- Rows populated by JavaScript -->
+                </tbody>
+            </table>
+
+            <div id="payment-instructions">
+                <h3>Bank Transfer Details</h3>
+                <p>Bank: Your Bank Name</p>
+                <p>Account Number: 123456789</p>
+                <p>Account Name: [Your Account Name]</p>
+
+                <!-- QR Code Image -->
+                <div id="qr-code">
+                    <h4>Scan to Pay:</h4>
+                    <img src="qr-code.png" alt="QR Code for Payment">
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Link Back to Tracker -->
+    <div class="navigation">
+        <a href="index.html">Back to Points Tracker</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

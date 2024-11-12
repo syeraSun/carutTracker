@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rant Points Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Advice -->
+    <header>
+        <h1>Welcome to the Carut Points Tracker!</h1>
+        <p>Remember, Jangan Carut kawan!!!</p>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div class="content-wrapper">
+
+    <!-- Points Tracker Form -->
+    <div id="points-tracker">
+        <h2>Add Points for Rants</h2>
+        <form id="rantForm">
+            <label for="memberSelect">Select Member:</label>
+            <select id="memberSelect">
+                <option value="" disabled selected>Choose a member</option>
+                <!-- Options for 10 members -->
+                <option value="Syera">Syera</option>
+                <option value="Ira">Ira</option>
+                <option value="Nabilah">Nabilah</option>
+                <option value="Syak">Syak</option>
+                <option value="Ain">Ain</option>
+                <option value="Ayunie">Ayunie</option>
+                <!-- Continue options up to Member 10 -->
+            </select>
+            <button type="button" onclick="addRantPoint()">Add +RM0.10</button>
+        </form>
+    </div>
+
+    <!-- Leaderboard Display -->
+    <div id="leaderboard">
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member</th>
+                    <th>Points (RM)</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboardBody">
+                <!-- Rows populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Link to Payment Page -->
+<div class="navigation">
+    <a href="payment.html">Go to Payment Page</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
